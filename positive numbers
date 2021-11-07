@@ -1,0 +1,14 @@
+# Python program to find positive numbers from a list
+
+# Getting list from user
+myList = []
+length = int(input("Enter number of elements : "))
+for i in range(0, length):
+    value = int(input())
+    myList.append(value)
+    
+# finding all positive number from the list 
+posNoList = list(filter(lambda i: (i >= 0), myList))
+
+# printing all positive values of the list 
+print("All positive numbers of the list : ", posNoList)
